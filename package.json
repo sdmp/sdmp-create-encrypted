@@ -1,0 +1,31 @@
+{
+  "name": "sdmp-create-encrypted",
+  "version": "0.0.1",
+  "description": "Create a valid SDMP encrypted container.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/test-*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdmp/sdmp-create-encrypted.git"
+  },
+  "keywords": [
+    "sdmp"
+  ],
+  "author": "saibotsivad",
+  "license": "VOL",
+  "bugs": {
+    "url": "https://github.com/sdmp/sdmp-create-encrypted/issues"
+  },
+  "homepage": "https://github.com/sdmp/sdmp-create-encrypted#readme",
+  "devDependencies": {
+    "node-rsa": "^0.3.2",
+    "sdmp-example-keys": "^1.1.0",
+    "tape": "4.4.0"
+  },
+  "dependencies": {
+    "aes-js": "^0.2.2",
+    "base64-url": "^1.2.1"
+  }
+}
