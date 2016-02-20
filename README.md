@@ -9,7 +9,7 @@ Two important things to note:
 1. The encrypted container is not signed. (Signatures are a
 	[different container](http://sdmp.io/spec/0.12/core/signature/).)
 	Because of this, there is no inherent proof of authorship in
-	this container. 
+	this container.
 2. [The specs](http://sdmp.io/spec/0.12/core/encrypted/#payload) require
 	the encrypted payload to be a valid SDMP container. This module does
 	*not* validate the data in any way prior to encryption.
@@ -67,6 +67,8 @@ do something like:
 
 	var container = { /* a valid container object */ }
 	var payload = new Buffer(JSON.stringify(container), 'utf8')
+
+**Note:** The payload is not verified to be a valid container object.
 
 ###### `listOfNodeRsaPublicKeys` *(`array`, required)*
 
